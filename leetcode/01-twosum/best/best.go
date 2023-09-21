@@ -1,3 +1,7 @@
+//This is a better solution using hash maps, because the lookup is O(1) in time complexity
+//this algorithm runs faster than the brute force solution. 
+
+
 package main
 
 import (

@@ -21,8 +21,4 @@ This repository is dedicated to documenting a personal journey of learning Golan
 
 Golang, or Go, is a versatile programming language known for its simplicity and concurrency support. It is well-suited for building scalable web applications, microservices, and system-level software. This repository serves as a personal resource to acquire valuable skills in modern software development through mastering Golang.
 
-Feel free to explore this repository for personal reference and to track your own progress. It's a resource tailored to your Golang learning journey.
-
-Happy coding!
-
 ---

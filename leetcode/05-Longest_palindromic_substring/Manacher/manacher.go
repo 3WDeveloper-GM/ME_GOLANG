@@ -1,3 +1,7 @@
+// This is my implementation of the longest palindromic substring algorithm 
+// I learned about the Manacher Algortithm, and decided it was a good idea to
+// implement it.
+
 package manacher
 
 import (

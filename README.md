@@ -1,10 +1,7 @@
 # ME_GOLANG
 
-Of course, here's an impersonal description for your GitHub repository, keeping in mind that it's for your own personal use:
 
----
-
-# Personal Golang Learning Repository
+## Personal Golang Learning Repository
 
 ![Go Logo](https://golang.org/doc/gopher/frontpage.png)
 

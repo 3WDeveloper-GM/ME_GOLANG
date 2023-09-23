@@ -3,16 +3,22 @@ package graph
 import (
 	"fmt"
 
-	"github.com/gammazero/deque"
+	"github.com/gammazero/deque" // This is just a library to implement a fast double ended queue
 )
+
+// Creating a Set implementation
 
 type Set struct {
 	Elements map[string]bool
 }
 
+// Creating an AdjacencyList implementation
+
 type AdjacencyList struct {
 	Transformation map[string]Set
 }
+
+// Just setting the methods for the graph package
 
 func InitializeSet() *Set {
 	set := make(map[string]bool)
@@ -46,6 +52,8 @@ func (ad *AdjacencyList) Print() {
 	}
 }
 
+// DFS using a recursive implementation
+
 func DFS(graph AdjacencyList, disc_map map[string]bool, root string) {
 	fmt.Printf("Initizalizing DFS algorithm on vertex %v.\n", root)
 	disc_map[root] = true
@@ -56,6 +64,8 @@ func DFS(graph AdjacencyList, disc_map map[string]bool, root string) {
 		}
 	}
 }
+
+// Implementing BFS for graph traversal
 
 func BFS(graph AdjacencyList, disc_map map[string]bool, root string) {
 	var Q deque.Deque[string]
@@ -75,6 +85,11 @@ func BFS(graph AdjacencyList, disc_map map[string]bool, root string) {
 	}
 	fmt.Println("")
 }
+
+// Using Recursion for making a backtracking algorithm;
+// an eulerian path is a path that passes through all;
+// the edges on a graph, and I wanted to do it as a
+// simple challenge for me.
 
 func EulerianPath(graph AdjacencyList, queue *deque.Deque[string], root string) {
 	for keys := range graph.Transformation[root].Elements {
